@@ -1,0 +1,25 @@
+# Money Fellows
+
+> Money Fellows is an Egyptian fintech that digitizes the traditional rotating savings and credit association (ROSCA / "gam'eya") as app-based "money circles," letting over 8 million users save collectively and access payouts and credit. Regulated by the Central Bank of Egypt and backed by 500 Global.
+
+Money Fellows is a consumer (B2C) mobile-first financial services product, not a developer API platform. It publishes no public developer portal, product API, or SDKs. The only machine-discoverable surface on the domain is the Umbraco CMS Content Delivery API member-authentication server (OpenID Connect / OAuth 2.0) that backs the marketing website.
+
+## Products
+- [Money Circles](https://moneyfellows.com): Group savings-and-lending circles with flexible 6/10/12-month durations; loan amounts up to 1,200,000 EGP per circle.
+- [Money Fellows Card](https://moneyfellows.com): Spending and savings card with cashback rewards.
+- [Goals](https://moneyfellows.com): Link circles to personal financial objectives.
+
+## Company
+- [About Us](https://moneyfellows.com/en-us/about-us-page/)
+- [Careers](https://moneyfellows.com/en-us/careers-page/)
+- [Contact Us](https://moneyfellows.com/en-us/contact-us-page/)
+- [Blog / Financial Tips](https://moneyfellows.com/en-us/3elmelgeib-home/)
+
+## Legal
+- [Terms and Conditions](https://moneyfellows.com/en-us/terms-and-conditions)
+- [Privacy Policy](https://moneyfellows.com/en-us/privacy-policy)
+
+## Discovery
+- [OpenID Configuration](https://moneyfellows.com/.well-known/openid-configuration)
+- [OAuth Authorization Server](https://moneyfellows.com/.well-known/oauth-authorization-server)
+- [JWKS](https://moneyfellows.com/.well-known/jwks)

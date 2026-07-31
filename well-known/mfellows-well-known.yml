@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: live probe of https://moneyfellows.com/.well-known/*
+host: https://moneyfellows.com
+notes: >-
+  The published discovery surface belongs to the Umbraco CMS Content Delivery
+  API member-authentication server that backs the moneyfellows.com website
+  (endpoints under /umbraco/delivery/api/v1/security/member/). Money Fellows
+  publishes no separate developer/product API discovery surface.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: mfellows-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: mfellows-oauth-authorization-server.json
+- path: /.well-known/jwks
+  status: 200
+  file: mfellows-jwks.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

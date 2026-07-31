@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://moneyfellows.com/.well-known/openid-configuration
+docs: https://moneyfellows.com/.well-known/openid-configuration
+notes: >-
+  Scopes advertised by the published OpenID Connect discovery document for the
+  moneyfellows.com member-authentication server (Umbraco Content Delivery API).
+  Only the standard OIDC scopes are declared; no product-specific scopes are
+  published.
+schemes:
+- name: oauth2
+  source: well-known/mfellows-oauth-authorization-server.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://moneyfellows.com/umbraco/delivery/api/v1/security/member/authorize
+    tokenUrl: https://moneyfellows.com/umbraco/delivery/api/v1/security/member/token
+scopes:
+- scope: openid
+  description: OpenID Connect authentication; request an ID token for the authenticated member.
+  flows:
+  - authorizationCode
+  sources:
+  - well-known/mfellows-openid-configuration.json
+- scope: offline_access
+  description: Issue a refresh token so the client can obtain new access tokens without re-authentication.
+  flows:
+  - authorizationCode
+  sources:
+  - well-known/mfellows-openid-configuration.json

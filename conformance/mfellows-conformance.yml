@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: derived
+source: well-known/mfellows-openid-configuration.json
+notes: >-
+  Standards conformance derived from the published OpenID Connect / OAuth 2.0
+  discovery metadata on the moneyfellows.com domain. No published third-party
+  compliance program (SOC 2 / ISO 27001 / PCI DSS) was found, so no Compliance
+  pointer is emitted. Money Fellows operates under Central Bank of Egypt
+  regulation per its website, but this is not a formal API compliance attestation.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: published /.well-known/oauth-authorization-server with authorization + token endpoints
+- id: oidc
+  conforms: true
+  evidence: published /.well-known/openid-configuration with issuer, jwks_uri, RS256 id_token signing
+- id: oauth2-pkce
+  conforms: true
+  evidence: code_challenge_methods_supported includes S256
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no OpenAPI or documented error envelope available
