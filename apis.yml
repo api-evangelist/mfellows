@@ -49,7 +49,7 @@ modified: '2026-07-20'
 tags:
 - Company
 - Fintech
-- Financial-Services
+- Financial Services
 - Savings
 - Lending
 - ROSCA
@@ -68,6 +68,7 @@ tags_raw:
 - Egypt
 - Mobile
 - Consumer Finance
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
